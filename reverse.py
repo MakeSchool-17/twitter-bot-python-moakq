@@ -9,4 +9,4 @@ def reverse_arguments(arguments):
 
 if __name__ == '__main__':
     reversed = reverse_arguments(sys.argv[1:])
-    print(reversed)
+    print(" ".join(reversed))

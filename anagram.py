@@ -1,10 +1,10 @@
 import sys
-
-
 # explain split?
 # how to improve load_dictionary?
 # how to benchmark in python?
-# method to to load dictionary
+
+
+# method to load dictionary
 def load_dictionary():
     with open("/usr/share/dict/words") as dictionary:
         dictionary_list = dictionary.readlines()

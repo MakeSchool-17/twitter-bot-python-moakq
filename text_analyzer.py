@@ -54,4 +54,4 @@ if __name__ == '__main__':
     source_list = load_text(file_name)
     histogram_structure = histogram(source_list)
     unique_data = unique_words(histogram_structure)
-    word_frequency = frequency('fish', histogram_structure)
+    # word frequency function is not used

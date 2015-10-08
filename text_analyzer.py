@@ -1,12 +1,14 @@
 # OPTIMIZE
 # use regular expressions to get better results
+import re
 
 
 # loads a text file into a list
 def load_text(source_file):
     with open(source_file) as text:
         string = text.read()
-        text_list = string.split()
+        pattern = re.compile(r'\w+')
+        text_list = re.findall(pattern, string)
         return text_list
 
 
@@ -20,6 +22,7 @@ def exists(word, histogram):
 
 
 # checks the prefered type of input
+# TODO later
 def string_or_file():
     file_location = input("Enter a file: ")
     return file_location
